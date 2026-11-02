@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+/* Tokens de marca (cores e fontes) - baseados na referência visual enviada */
+@theme {
+  /* Azul-marinho profundo (hero, rodapé, blocos escuros) */
+  --color-navy-900: #090e17;
+  --color-navy-800: #0e1521;
+  --color-navy-700: #172033;
+  --color-navy-600: #222d44;
+  --color-navy-500: #3a4660;
+
+  /* Dourado / bronze (destaques, botões, ícones) */
+  --color-gold-700: #8f713f;
+  --color-gold-600: #b3935a;
+  --color-gold-500: #c4a572;
+  --color-gold-300: #dcc9a3;
+  --color-gold-100: #efe7d6;
+
+  /* Neutros */
+  --color-cream: #f5f3ef;
+  --color-ink: #1a2233;
+
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+}
+
+h1,
+h2 {
+  font-family: var(--font-serif);
+}
